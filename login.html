@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chels Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="bg.jpg" alt="Naturenest Company Logo">
+            <h1>CHELS BAKERY SHOP</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="products.html">PRODUCT</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="login.html">LOGIN</a></li>      
+                <li><a href="podcast.html">PODCAST</a></li>      
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products...">
+            <button>Search</button>
+            <button id="modeToggle">Toggle Dark/Light Mode</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <!-- Login Form -->
+            <div id="login-section">
+                <h2 class="log">LOGIN</h2>
+                <form id="login-form">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" required>
+
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#" onclick="showRegister()">Create Account</a></p>
+            </div>
+
+            <!-- Registration Form -->
+            <div id="register-section" style="display: none;">
+                <h2>Create an Account</h2>
+                <form id="register-form">
+                    <label for="register-name">Full Name:</label>
+                    <input type="text" id="register-name" required>
+
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" required>
+
+                    <label for="register-password">Password:</label>
+                    <input type="password" id="register-password" required>
+
+                    <button type="submit">Register</button>
+                </form>
+                <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+            </div>
+        </div>
+    </main>
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
